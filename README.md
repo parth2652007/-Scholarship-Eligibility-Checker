@@ -1,1 +1,1 @@
-# -Scholarship-Eligibility-Checker
+# Scholarship Eligibility Checker
