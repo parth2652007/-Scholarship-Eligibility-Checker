@@ -2,161 +2,182 @@
   {
     "Name": "Tata Trust Scholarship",
     "Category": "All",
+    "Gender": "All",
     "Income": 400000,
     "State": "All",
     "Education": "UG",
-    "Link": "https://buddy4study.com/"
+    "Link": "https://www.tatatrusts.org"
   },
   {
     "Name": "Reliance Foundation Scholarship",
     "Category": "All",
+    "Gender": "All",
     "Income": 500000,
     "State": "All",
     "Education": "UG",
-    "Link": "https://buddy4study.com/"
+    "Link": "https://scholarships.reliancefoundation.org"
   },
   {
     "Name": "HDFC Bank Parivartan Scholarship",
     "Category": "All",
+    "Gender": "All",
     "Income": 250000,
     "State": "All",
     "Education": "School",
-    "Link": "https://buddy4study.com/"
+    "Link": "https://www.buddy4study.com/scholarships/hdfc-bank-parivartan"
   },
   {
     "Name": "Aditya Birla Scholarship",
     "Category": "All",
+    "Gender": "All",
     "Income": 600000,
     "State": "All",
     "Education": "UG",
-    "Link": "https://buddy4study.com/"
+    "Link": "https://www.adityabirlascholars.net"
   },
   {
     "Name": "Kotak Kanya Scholarship",
     "Category": "General",
+    "Gender": "Female",
     "Income": 600000,
     "State": "All",
     "Education": "UG",
-    "Link": "https://buddy4study.com/"
+    "Link": "https://www.buddy4study.com/page/kotak-kanya-scholarship"
   },
   {
     "Name": "Santoor Scholarship",
     "Category": "General",
+    "Gender": "Female",
     "Income": 200000,
     "State": "All",
     "Education": "UG",
-    "Link": "https://buddy4study.com/"
+    "Link": "https://www.santoorscholarships.com"
   },
   {
     "Name": "ONGC Scholarship",
     "Category": "SC",
+    "Gender": "All",
     "Income": 200000,
     "State": "All",
     "Education": "UG",
-    "Link": "https://buddy4study.com/"
+    "Link": "https://www.ongcindia.com"
   },
   {
     "Name": "L&T Build India Scholarship",
     "Category": "All",
+    "Gender": "All",
     "Income": 800000,
     "State": "All",
     "Education": "PG",
-    "Link": "https://buddy4study.com/"
+    "Link": "https://www.lntecc.com/build-india-scholarship"
   },
   {
     "Name": "Mahindra Finance Scholarship",
     "Category": "All",
+    "Gender": "All",
     "Income": 300000,
     "State": "All",
     "Education": "UG",
-    "Link": "https://buddy4study.com/"
+    "Link": "https://www.mahindrafinance.com"
   },
   {
     "Name": "Infosys Foundation Scholarship",
     "Category": "All",
+    "Gender": "All",
     "Income": 400000,
     "State": "All",
     "Education": "UG",
-    "Link": "https://buddy4study.com/"
+    "Link": "https://www.infosys.com/infosys-foundation.html"
   },
   {
     "Name": "Fair & Lovely Foundation Scholarship",
     "Category": "General",
+    "Gender": "Female",
     "Income": 250000,
     "State": "All",
     "Education": "UG",
-    "Link": "https://buddy4study.com/"
+    "Link": "https://www.hul.co.in/sustainable-living/fair-and-lovely-foundation"
   },
   {
     "Name": "Swami Dayanand Education Foundation",
     "Category": "All",
+    "Gender": "All",
     "Income": 600000,
     "State": "All",
     "Education": "UG",
-    "Link": "https://buddy4study.com/"
+    "Link": "https://www.swamidayanand.org"
   },
   {
     "Name": "JN Tata Endowment Scholarship",
     "Category": "All",
+    "Gender": "All",
     "Income": 600000,
     "State": "All",
     "Education": "PG",
-    "Link": "https://buddy4study.com/"
+    "Link": "https://www.jntataendowment.org"
   },
   {
     "Name": "SBI Youth for India Fellowship",
     "Category": "All",
+    "Gender": "All",
     "Income": 300000,
     "State": "All",
     "Education": "PG",
-    "Link": "https://buddy4study.com/"
+    "Link": "https://youthforindia.org"
   },
   {
     "Name": "IDFC First Bank MBA Scholarship",
     "Category": "All",
+    "Gender": "All",
     "Income": 600000,
     "State": "All",
     "Education": "PG",
-    "Link": "https://buddy4study.com/"
+    "Link": "https://www.idfcfirstbank.com/csr/education"
   },
   {
     "Name": "Vidyadhan Scholarship",
     "Category": "All",
+    "Gender": "All",
     "Income": 200000,
     "State": "All",
     "Education": "UG",
-    "Link": "https://buddy4study.com/"
+    "Link": "https://www.vidyadhan.org"
   },
   {
     "Name": "Goonj Setu Fellowship",
     "Category": "All",
+    "Gender": "All",
     "Income": 300000,
     "State": "All",
     "Education": "PG",
-    "Link": "https://buddy4study.com/"
+    "Link": "https://goonj.org"
   },
   {
     "Name": "Help The Blind Foundation",
     "Category": "Disability",
+    "Gender": "All",
     "Income": 300000,
     "State": "All",
     "Education": "UG",
-    "Link": "https://buddy4study.com/"
+    "Link": "https://www.htbf.org"
   },
   {
     "Name": "North South Foundation Scholarship",
     "Category": "All",
+    "Gender": "All",
     "Income": 150000,
     "State": "All",
     "Education": "UG",
-    "Link": "https://buddy4study.com/"
+    "Link": "https://www.northsouth.org"
   },
   {
     "Name": "Smile Foundation Scholarship",
     "Category": "All",
+    "Gender": "All",
     "Income": 250000,
     "State": "All",
     "Education": "UG",
-    "Link": "https://buddy4study.com/"
+    "Link": "https://www.smilefoundationindia.org"
   }
 ]
+
