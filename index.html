@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scholarship Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🎓 Scholarship Eligibility Checker</h1>
+
+<div class="form">
+  <select id="category">
+    <option value="">All</option>
+    <option>SC</option>
+    <option>ST</option>
+    <option>OBC</option>
+    <option>Minority</option>
+    <option>General</option>
+  </select>
+
+  <input type="number" id="income" placeholder="Annual Income">
+
+  <select id="education">
+    <option value="">Select Education</option>
+    <option>UG</option>
+    <option>PG</option>
+    <option>Diploma</option>
+  </select>
+
+  <input type="text" id="state" placeholder="State">
+
+  <button onclick="checkScholarship()">Check Scholarship</button>
+</div>
+
+
+<!-- Results Section -->
+<div id="results" class="results-section"></div>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
