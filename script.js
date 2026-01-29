@@ -1,35 +1,40 @@
 let scholarships = [];
+let hasSearched = false;
 
-// CONNECT JSON FILE
 fetch("scholarships.json")
-  .then((response) => response.json())
-  .then((data) => {
+  .then(res => res.json())
+  .then(data => {
     scholarships = data;
-    console.log("JSON connected:", scholarships);
+    console.log("Scholarships loaded:", scholarships.length);
   })
-  .catch((error) => console.error("Error loading JSON:", error));
+  .catch(err => console.error("Data load error:", err));
 
 function checkScholarship() {
+  hasSearched = true;
+
   const category = document.getElementById("category").value;
-  const gender=document.getElementById("gender").value;
+  const gender = document.getElementById("gender").value;
   const income = Number(document.getElementById("income").value);
   const education = document.getElementById("education").value;
-  const state = document.getElementById("state").value.toLowerCase();
+  const state = document.getElementById("state").value.trim().toLowerCase();
 
+  const results = document.getElementById("results");
   let html = "";
 
+  // 🔴 CASE 1: User clicked but fields are missing
+  if (!category || !gender || !income || !education || !state) {
+    results.innerHTML = `<p class="warn">⚠️ Please fill all fields</p>`;
+    return;
+  }
+
+  // 🔵 CASE 2: All fields filled → check scholarships
   scholarships.forEach((s) => {
     if (
-      (category === "" || s.Category === category || s.Category === "All") &&
-      (education === "" || s.Education === education) &&
-      ((
-  gender === "" ||
-  s.Gender === "All" ||
-  s.Gender === gender
-)
-&&
-      (state === "" || s.State === "All" || s.State.toLowerCase() === state)
-      )
+      (s.Category === category || s.Category === "All") &&
+      (s.Gender === "All" || s.Gender === gender) &&
+      s.Education === education &&
+      income <= s.Income &&
+      (s.State === "All" || s.State.toLowerCase() === state)
     ) {
       html += `
         <div class="scholarship-card">
@@ -41,7 +46,10 @@ function checkScholarship() {
     }
   });
 
-  document.getElementById("results").innerHTML =
-    html || `<p class="no-result">No scholarships found</p>`;
+  // 🔴 CASE 3: All fields filled but no match
+  results.innerHTML =
+    html || `<p class="no-result">❌ No scholarships found</p>`;
 }
+
+
 
