@@ -8,6 +8,15 @@ fetch("scholarships.json")
     console.log("Scholarships loaded:", scholarships.length);
   })
   .catch(err => console.error("Data load error:", err));
+  const indianStates = [
+  "andhra pradesh","arunachal pradesh","assam","bihar","chhattisgarh",
+  "goa","gujarat","haryana","himachal pradesh","jharkhand",
+  "karnataka","kerala","madhya pradesh","maharashtra","manipur",
+  "meghalaya","mizoram","nagaland","odisha","punjab",
+  "rajasthan","sikkim","tamil nadu","telangana","tripura",
+  "uttar pradesh","uttarakhand","west bengal",
+  "delhi","chandigarh","puducherry","jammu and kashmir","ladakh"
+];
 
 function checkScholarship() {
   hasSearched = true;
@@ -26,6 +35,11 @@ function checkScholarship() {
     results.innerHTML = `<p class="warn">⚠️ Please fill all fields</p>`;
     return;
   }
+  if (!indianStates.includes(state)) {
+  results.innerHTML = `<p class="warn">⚠️ Please enter a valid Indian state</p>`;
+  return;
+}
+
 
   // 🔵 CASE 2: All fields filled → check scholarships
   scholarships.forEach((s) => {
