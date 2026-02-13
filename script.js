@@ -25,13 +25,15 @@ function checkScholarship() {
   const gender = document.getElementById("gender").value;
   const income = Number(document.getElementById("income").value);
   const education = document.getElementById("education").value;
+  const stream12th = document.getElementById("stream12th").value;
+  const course = document.getElementById("course").value.trim();
   const state = document.getElementById("state").value.trim().toLowerCase();
 
   const results = document.getElementById("results");
   let html = "";
 
   // 🔴 CASE 1: User clicked but fields are missing
-  if (!category || !gender || !income || !education || !state) {
+  if (!category || !gender || !income || !education || !stream12th || !course || !state) {
     results.innerHTML = `<p class="warn">⚠️ Please fill all fields</p>`;
     return;
   }
@@ -54,6 +56,8 @@ function checkScholarship() {
         <div class="scholarship-card">
           <h3>${s.Name}</h3>
           <p>Income Limit: ₹${s.Income}</p>
+          <p>Course: ${course}</p>
+          <p>12th Stream: ${stream12th}</p>
           <a href="${s.Link}" target="_blank">Apply</a>
         </div>
       `;
